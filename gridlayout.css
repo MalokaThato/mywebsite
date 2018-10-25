@@ -2,7 +2,7 @@
 	display:grid;
 	grid-template-rows: 3em 1fr  ;
 	grid-gap: 1em;
-	grid-auto-rows: minmax(500px, auto);
+	grid-auto-rows: minmax(auto, auto);
 	/*background: #cceeff;*/
 	margin-right: 2em;
 	margin-left: 2em;
@@ -27,6 +27,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1em;
+	grid-auto-columns: minmax(400px,auto);
 }
 
 .wrapper > article{
