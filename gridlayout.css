@@ -1,0 +1,138 @@
+.wrapper{
+	display:grid;
+	grid-template-rows: 3em 1fr  ;
+	grid-gap: 1em;
+	grid-auto-rows: minmax(500px, auto);
+	/*background: #cceeff;*/
+	margin-right: 2em;
+	margin-left: 2em;
+
+
+
+}
+
+.socialgrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background: rgba(.4 , .4, .5, .4);
+}
+
+.socialgrid > i{
+	font-size: 3em;
+	align-self: center;
+	justify-self: center;
+}
+
+.twoCol{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.wrapper > article{
+
+}
+
+.topgrid{
+	display: grid;
+	grid-template-rows: .5fr 1fr;
+	grid-gap:1em;
+	grid-auto-rows: minmax(auto,auto)
+
+}
+
+
+.logoholder{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	grid-auto-columns: minmax(100px,auto);
+}
+
+
+.logoholder >img{
+	border-radius: 250px;
+	align-self: center;
+	justify-self: center;
+}
+
+.myProfileimg{
+	align-self: center;
+  justify-self: center
+}
+
+/*footer{
+
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 1em;
+}*/
+
+footer{
+	background:#0C6FB7;
+	color: #fff;
+	margin-top: 2em;
+}
+
+.averageskill{
+	animation-name: avgskill;
+	animation-duration: 5s;
+	height: 100px;
+	background-color: #808ea3;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-name: avgskill;
+}
+
+.expertskill{
+	animation-name: expskill;
+	animation-duration: 5s;
+	height: 100px;
+	background-color: #272c35;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-name: expskill;
+}
+
+.strongskill{
+	animation-name: strongskill;
+	animation-duration: 5s;
+	height: 100px;
+	background-color: #515b6b;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-name: strongskill;
+}
+
+
+
+@keyframes avgskill{
+	from {width: 0;}
+	to {width: 36%;}
+}
+
+@ -webkit-keyframes avskill{
+	from {width: 0;}
+	to {width: 36%;}
+}
+
+@keyframes strongskill{
+	from {width: 0;}
+	to {width: 50%;}
+}
+
+@ -webkit-keyframes strongkill{
+	from {width: 0;}
+	to {width: 50%;}
+}
+
+@keyframes expskill{
+	from {width: 0;}
+	to {width: 60%;}
+}
+
+@ -webkit-keyframes expskill{
+	from {width: 0;}
+	to {width: 90%;}
+}
